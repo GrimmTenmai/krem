@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Багет Зерновой</title>
+    <meta name="description" content = 'Зерновой багет KREM — хрустящая корочка, насыщенный вкус. Идеальный хлеб для сэндвичей. Натуральные
+        ингредиенты: мука пшеничная/ржаная, семена льна, подсолнечника, хлопья.'>
+    <link rel="stylesheet" href="../style/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="../SCRIPTS/main.js"></script>
+</head>
+<body>
+    <header class="header">
+      <div class="header__row">
+        <div class="header__logo">
+          <a href="../">
+            <img src="../ICONS/logo.webp" alt="">
+          </a>
+        </div>
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="liheader__menu-item">
+              <button type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.88377 17.5791C8.0373 20.9808 13.3513 21.1819 16.7529 18.0284C20.1546 14.8748 20.3557 9.56082 17.2022 6.15919C14.0486 2.75757 8.73462 2.55644 5.33299 5.70997C1.93136 8.8635 1.73024 14.1775 4.88377 17.5791Z"
+                    stroke="black"
+                    stroke-width="2.18182"
+                  />
+                  <path d="M17.9062 18.5454L22.1489 22.7881" stroke="black" stroke-width="2.18182" stroke-linecap="round" />
+                </svg>
+              </button>
+            </li>
+            <li class="liheader__menu-item">
+              <button type="button">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.7602 3.48801C23.0395 5.76726 23.0395 9.46262 20.7602 11.742L12.7708 19.7312C12.3448 20.1572 11.6541 20.1572 11.2281 19.7312L3.23874 11.742C0.959484 9.46262 0.959483 5.76726 3.23874 3.48801C5.51799 1.20875 9.2134 1.20875 11.4926 3.48801L11.9995 3.99482L12.5063 3.48801C14.7855 1.20875 18.481 1.20875 20.7602 3.48801Z"
+                    stroke="black"
+                    stroke-width="2.18182"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="liheader__menu-item">
+              <button type="button" onclick="openSidebar()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.01453 7.53839C4.0652 6.97612 4.53649 6.54541 5.10103 6.54541H18.8993C19.4638 6.54541 19.9351 6.97612 19.9857 7.53839L21.1657 20.6293C21.2232 21.2679 20.7203 21.8181 20.0792 21.8181H3.92107C3.27991 21.8181 2.77701 21.2679 2.83457 20.6293L4.01453 7.53839Z"
+                    stroke="black"
+                    stroke-width="1.96364"
+                  />
+                  <path
+                    d="M16.364 9.81822V5.45458C16.364 3.04461 14.4103 1.09094 12.0004 1.09094C9.59038 1.09094 7.63672 3.04461 7.63672 5.45458V9.81822"
+                    stroke="black"
+                    stroke-width="2.01818"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="header__burger-menu" id="burgerMenu" >
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div id="sidebar" class="sidebar">
+        <div class="sidebar__row">
+            <div class="sidebar__row-header">
+                <h2>Избранное</h2>
+                <div class="closeMenu" id="closeMenu" role="button" tabindex="0" aria-label="Закрыть меню" onclick=closeSidebar()>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul id="favorites-list">
+        </div>
+    </div>
+        <div class="product">
+            <div class="product__row container">
+                <div class="product__row-grid">
+                    <ul class="product__row-list">
+                        <li class="product__row-item computer"><img src="../IMAGE/section3/Image.webp" alt=""></li>
+                        <li class="product__row-item"><img src="../IMAGE/section3/baguette1.webp" alt=""></li>
+                        <li class="product__row-item"><img src="../IMAGE/section3/baguette2.webp" alt=""></li>
+                        <li class="product__row-item"><img src="../IMAGE/section3/baguette3.webp" alt=""></li>
+                    </ul>
+                    <div class="swiper__container">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/Image.webp" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/baguette1.webp" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/baguette2.webp" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/baguette3.webp" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/Image.webp" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/baguette1.webp" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/baguette2.webp" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../IMAGE/section3/baguette3.webp" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product__row-description">
+                        <h1><?php echo $product_name; ?> <br> <?php echo $product_price; ?> р.</h1>
+                        <form method="POST" action="">
+                            <div class="product__row-readupay">
+                                <div class="quantity-selector">
+                                    <button type="button" class="btn" id="decrease">-</button>
+                                    <input type="number" name="quantity" id="quantity" value="<?php echo $current_quantity; ?>" min="1" required />
+                                    <button type="button" class="btn button" id="increase">+</button>
+                                </div>
+                                <input type="submit" class="submit" name="buy" value="Купить">
+                            </div>
+                        </form>
+                        <p css="font-size:16px">Зерновой багет калорийностью 417 ккал — это ручная работа из смеси цельнозерновой и ржаной муки с солодом и семенами, отличающаяся плотной мякотью, хрустящей корочкой и насыщенным вкусом. Производство хлеба основано на классической домашней технологии: длительная ферментация теста на живой закваске, ручная формовка и выпечка в печи с пароувлажнением для идеальной текстуры и аромата.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--div class="see-also">
+            <h2>Смотрите также</h2>
+            <div class="catalog__grid">
+                <ul class="catalog__list">
+                    <li class="catalog__item" id="vipechka">
+                        <a href="./product.html">
+                            <div class="catalog__position">
+                                <div class="favorites">
+                                    <div class="favorites__bg">
+                                        <svg class="svg" width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 6.82647C20 11.9974 10.5 17.5 10.5 17.5C10.5 17.5 1 11.9974 1 6.82647C1 -0.194364 10.5 -0.099555 10.5 6.07947C10.5 -0.099555 20 -0.00712395 20 6.82647Z"
+                                                stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Багет Зерновой</p>
+                            <p>230 р.</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item" id="vipechka">
+                        <a href="./product.html">
+                            <div class="catalog__position">
+                                <div class="favorites">
+                                    <div class="favorites__bg">
+                                        <svg class="svg" width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 6.82647C20 11.9974 10.5 17.5 10.5 17.5C10.5 17.5 1 11.9974 1 6.82647C1 -0.194364 10.5 -0.099555 10.5 6.07947C10.5 -0.099555 20 -0.00712395 20 6.82647Z"
+                                                stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Багет Зерновой</p>
+                            <p>230 р.</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item" id="vipechka">
+                        <a href="./product.html">
+                            <div class="catalog__position">
+                                <div class="favorites">
+                                    <div class="favorites__bg">
+                                        <svg class="svg" width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 6.82647C20 11.9974 10.5 17.5 10.5 17.5C10.5 17.5 1 11.9974 1 6.82647C1 -0.194364 10.5 -0.099555 10.5 6.07947C10.5 -0.099555 20 -0.00712395 20 6.82647Z"
+                                                stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Багет Зерновой</p>
+                            <p>230 р.</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item" id="vipechka">
+                        <a href="./product.html">
+                            <div class="catalog__position">
+                                <div class="favorites">
+                                    <div class="favorites__bg">
+                                        <svg class="svg" width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 6.82647C20 11.9974 10.5 17.5 10.5 17.5C10.5 17.5 1 11.9974 1 6.82647C1 -0.194364 10.5 -0.099555 10.5 6.07947C10.5 -0.099555 20 -0.00712395 20 6.82647Z"
+                                                stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Багет Зерновой</p>
+                            <p>230 р.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div-->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+        document.getElementById('increase').addEventListener('click', function () {
+            let quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+        document.getElementById('decrease').addEventListener('click', function () {
+            let quantityInput = document.getElementById('quantity');
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+    </script>
+</body>
+
+
+</html>

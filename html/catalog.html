@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KREM CATALOG</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__row">
+            <a class="back" onclick="window.history.back()">
+                <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.292893 7.3029C-0.097631 7.69342 -0.0976311 8.32659 0.292893 8.71711L6.65685 15.0811C7.04738 15.4716 7.68054 15.4716 8.07107 15.0811C8.46159 14.6906 8.46159 14.0574 8.07107 13.6669L2.41421 8.01001L8.07107 2.35315C8.46159 1.96263 8.46159 1.32946 8.07107 0.93894C7.68054 0.548416 7.04738 0.548416 6.65685 0.93894L0.292893 7.3029ZM26 8.01001L26 7.01001L1 7.01001L1 8.01001L1 9.01001L26 9.01001L26 8.01001Z" fill="white" />
+                </svg>
+                <p>Назад</p>
+            </a>
+            <div class="header__menu">
+          <ul class="header__menu-list">
+            <li class="liheader__menu-item">
+              <button type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.88377 17.5791C8.0373 20.9808 13.3513 21.1819 16.7529 18.0284C20.1546 14.8748 20.3557 9.56082 17.2022 6.15919C14.0486 2.75757 8.73462 2.55644 5.33299 5.70997C1.93136 8.8635 1.73024 14.1775 4.88377 17.5791Z"
+                    stroke="white"
+                    stroke-width="2.18182"
+                  />
+                  <path d="M17.9062 18.5454L22.1489 22.7881" stroke="white" stroke-width="2.18182" stroke-linecap="round" />
+                </svg>
+              </button>
+            </li>
+            <li class="liheader__menu-item">
+              <button type="button" onclick="openSidebar()">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.7602 3.48801C23.0395 5.76726 23.0395 9.46262 20.7602 11.742L12.7708 19.7312C12.3448 20.1572 11.6541 20.1572 11.2281 19.7312L3.23874 11.742C0.959484 9.46262 0.959483 5.76726 3.23874 3.48801C5.51799 1.20875 9.2134 1.20875 11.4926 3.48801L11.9995 3.99482L12.5063 3.48801C14.7855 1.20875 18.481 1.20875 20.7602 3.48801Z"
+                    stroke="white"
+                    stroke-width="2.18182"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li class="liheader__menu-item">
+              <button type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.01453 7.53839C4.0652 6.97612 4.53649 6.54541 5.10103 6.54541H18.8993C19.4638 6.54541 19.9351 6.97612 19.9857 7.53839L21.1657 20.6293C21.2232 21.2679 20.7203 21.8181 20.0792 21.8181H3.92107C3.27991 21.8181 2.77701 21.2679 2.83457 20.6293L4.01453 7.53839Z"
+                    stroke="white"
+                    stroke-width="1.96364"
+                  />
+                  <path
+                    d="M16.364 9.81822V5.45458C16.364 3.04461 14.4103 1.09094 12.0004 1.09094C9.59038 1.09094 7.63672 3.04461 7.63672 5.45458V9.81822"
+                    stroke="white"
+                    stroke-width="2.01818"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar__row">
+            <div class="sidebar__row-header">
+                <h2>Избранное</h2>
+                <div class="closeMenu" id="closeMenu" role="button" tabindex="0" aria-label="Закрыть меню">
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+                <ul id="favorites-list">
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="KREM__CATALOG">
+            <aside class="sidenav">
+                <a href="#all">Все</a>
+                <a href="#boob">Выпечка</a>
+                <a href="#">Десерты</a>
+                <a href="#">Пироженое</a>
+                <a href="#">Печенье</a>
+                <a href="#">Торты</a>
+                <a href="#">Хлеб</a>
+                <a href="#">Чизкейки</a>
+                <a href="#">Другое</a>
+            </aside>
+            <div class="catalog__item-grid">
+                <ul class="catalog__item-list">
+                        <li class="catalog__item">
+                            <a href="./product.html">
+                                <div class="catalog__position">
+                                    <div class="favorites">
+                                        <div class="favorites__bg">
+                                            <svg class="svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                                                <path d="M20 6.82647C20 11.9974 10.5 17.5 10.5 17.5C10.5 17.5 1 11.9974 1 6.82647C1 -0.194364 10.5 -0.099555 10.5 6.07947C10.5 -0.099555 20 -0.00712395 20 6.82647Z" 
+                                                    stroke="black" 
+                                                    stroke-width="1.5" 
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Багет Зерновой</p>
+                                <p>230 р.</p>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="../SCRIPTS/main.js"></script>
+</body>
+</html>

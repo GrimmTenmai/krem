@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Bounded';
+  src: url(../fonts/BOUNDED-REGULAR.TTF);
+}
+
+:root {
+ --font-family: 'Bounded';
+
+ --color-white: #000000;
+ --color-orange: #ff9900;
+
+ --background-color-black: #eaeaea;
+ --background-color-orange: #f90;
+
+ --border-orange: 1px solid #f90;
+
+ --padd-x: clamp(20px, 2.94vw, 40px);
+}
+body {
+ font-family: var(--font-family);
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 176%;
+ background-color: var(--background-color-black);
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.button {
+ display: inline-flex;
+ align-items: center;
+}
+.container {
+ max-width: 1360px;
+ margin: 0 auto;
+}
+.catalog__item-position,
+.catalog__position {
+  width: 100%;
+  height: 22.39vw;
+  min-height: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.taste1{
+  background-image: url(../IMAGE/section3/Image.webp);
+}
+.taste2{
+  background-image: url(../IMAGE/section3/cheesecake.webp);
+}
+.taste3{
+  background-image: url(../IMAGE/section3/rogal.webp);
+}
+.taste4{
+  background-image: url(../IMAGE/section3/rosan.webp);
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #000000;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+h6 {
+  color: white;
+}
+
+.title_text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 50px;
+  color: #ffa500;
+}

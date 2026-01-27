@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMA</title>
+    <link rel="stylesheet" href="./style/form.css">
+</head>
+<body>
+    <div class="forma">
+        <div class="container" id="container-form">
+            <div class="form-container sign-up">
+                <form method="post" action="./api/register.php">
+                    <h1>Регистрация</h1>
+                    <input type="text" placeholder="Имя" name="login">
+                    <input type="password" placeholder="Пароль" name="pass">
+                    <button style="width: 100%;">Рег</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form method="post" action="./api/login.php">
+                    <h1>Вход</h1>
+                    <input type="text" placeholder="Имя" name="login">
+                    <input type="password" placeholder="Пароль" name="pass">
+                    <button style="width: 100%;">Войти</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Добро пожаловать обратно!<h1>
+                        <p style="font-size: 14px;">Введите свои персональные данные, чтобы использовать все функции сайта</p>
+                        <button class="hidden-form" id="login">Войти</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Привет, друг!</h1>
+                        <p>Зарегистрируйтесь, указав свои персональные данные, чтобы использовать все функции сайта</p>
+                        <button class="hidden-form" id="register">Рег</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const container = document.getElementById('container-form');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+    
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+    
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    </script>
+</body>
+</html>
