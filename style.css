@@ -379,7 +379,7 @@
 .delivery__container {
   border: 1px solid #f90;
   border-radius: 20px;
-  background-image: url(../KREM/IMAGE/section1/image\ 16.png);
+  background-image: url(./IMAGE/section1/image16.png);
   
   padding: 40px;
   color: white;
@@ -898,4 +898,5 @@ h6 {
 .cart-total h3 {
     margin: 0;
     font-size: 18px;
+
 }
