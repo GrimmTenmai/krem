@@ -51,7 +51,7 @@ button {
 }
 
 .taste1{
-  -image: url(../IMAGE/section3/Image.webp);
+  background-image: url(../IMAGE/section3/Image.webp);
 }
 .taste2{
   background-image: url(../IMAGE/section3/cheesecake.webp);
@@ -647,7 +647,7 @@ svg * {
 .delivery__container {
   border: 1px solid #f90;
   border-radius: 20px;
-  background-image: url(./IMAGE/section1/image16.png);
+  background-image: url(./IMAGE/section1/image16.webp);
   
   padding: 40px;
   color: white;
@@ -1168,5 +1168,6 @@ h6 {
     font-size: 18px;
 
 }
+
 
 
