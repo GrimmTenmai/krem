@@ -2,4 +2,5 @@ User-agent: Yandex
 Disallow: /html/payment.html
 Disallow: /html/catalog.html
 
-Sitemap: /sitemap.xml
+
+Sitemap: https://krem-gamma.vercel.app/sitemap.xml
